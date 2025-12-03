@@ -31,28 +31,17 @@ body {
     color: plum;
 }
 
-/* .navbar .dropdown {
-    display: inline-block;
-    position: relative;
-}
-
-.navbar .dropdown:hover .dropdown-content {
-    display: block;
-} */
-
-
-
 .sobreyo {
     padding: 0;
     box-sizing: border-box;
-    width: 100%; /* Ancho del contenedor */
+    width: 95%; /* Ancho del contenedor */
     max-width: 1300px; /* Ancho máximo */
     margin: 100px auto; /* Márgenes automáticos para centrar el contenedor */
     padding: 20px; /* Espaciado interno */
     background-color: #f4f4f4; /* Color de fondo */
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 7px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin: auto;
+    margin: 10;
     text-align: center;
     margin-top: 10cqmin
 }
@@ -80,3 +69,14 @@ h1 {
 .cat {
     font-family: Cat;
 }
+
+footer {
+    background-color: #5f0068;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: plum;
+ 
+}
+
