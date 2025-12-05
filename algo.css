@@ -1,0 +1,82 @@
+
+body {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #c77ef8;
+}
+
+/* Color de la opcion de menu*/
+.navbar {
+    background-color: #5f0068;
+    overflow: hidden;
+    
+}
+
+.navbar {
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar a {
+    font-size: 45px;
+    padding: 5px 20px;
+    color: white
+}
+    
+.navbar a:hover {
+    color: plum;
+}
+
+/* .navbar .dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+
+
+.sobreyo {
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%; /* Ancho del contenedor */
+    max-width: 1300px; /* Ancho máximo */
+    margin: 100px auto; /* Márgenes automáticos para centrar el contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: auto;
+    text-align: center;
+    margin-top: 10cqmin
+}
+
+.sobreyo h2 {
+    font-size: 60px;
+}
+
+.sobreyo p {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 65px;
+    text-align: center;
+}
+
+@font-face {
+  font-family: 'Cat';
+  src: url('./funtes/catlowe/CatLowe.ttf') format('woff2'); /* Usa el formato correcto */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cat {
+    font-family: Cat;
+}
