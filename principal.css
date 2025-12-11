@@ -5,12 +5,12 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #c77ef8;
+    background-color: #fdcae1;
 }
 
 /* Color de la opcion de menu*/
 .navbar {
-    background-color: #5f0068;
+    background-color: #c999af;
     overflow: hidden;
     
 }
@@ -28,7 +28,7 @@ body {
 }
     
 .navbar a:hover {
-    color: plum;
+    color: #000000;
 }
 
 /* .navbar .dropdown {
@@ -70,13 +70,3 @@ h1 {
     text-align: center;
 }
 
-@font-face {
-  font-family: 'Cat';
-  src: url('./funtes/catlowe/CatLowe.ttf') format('woff2'); /* Usa el formato correcto */
-  font-weight: normal;
-  font-style: normal;
-}
-
-.cat {
-    font-family: Cat;
-}
