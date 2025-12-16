@@ -1,46 +1,76 @@
 @font-face {
   font-family: 'Cat';
-  src: url('../funtes/catlowe/CatLowe.ttf') format('woff2'); /* Usa el formato correcto */
+  src: url('../funtes/catlowe/CatLowe.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-
-.cat {
-    font-family: Cat;
-}
-
-.navbar{
-  background-color: #c999af;
-  overflow: hidden;
-  padding: 3px;
-  text-align: center;
-  margin-top: 70px; 
-}
-
-.navbar a {
-    font-size: 60px;
-    color: white
-}
-    
-.navbar a:hover {
-    color: #000000;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: #E0F7FA;
+  /* Pastel Blue */
+  font-family: sans-serif;
 }
 
-.card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 260px;
-  height: 360px;  
-  background: navajowhite;
-  overflow: hidden;
+.cat {
+  font-family: 'Cat', sans-serif;
+  /* Added fallback */
 }
+
+.navbar {
+  background-color: #81D4FA;
+  /* Light Blue */
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+  /* Removed underline */
+  display: inline-block;
+  letter-spacing: 5px;
+  /* Added letter spacing */
+}
+
+.navbar a:hover {
+  color: #01579B;
+  /* Darker Blue */
+}
+
+/* Container to align cards to the center */
+.container {
+  display: flex;
+  justify-content: center;
+  /* Always centered */
+  flex-wrap: wrap;
+  gap: 200px;
+  /* Increased separation significantly */
+  padding: 40px;
+  max-width: 1600px;
+  /* Increased max-width */
+  margin: 0 auto;
+}
+
+/* Removed media query that aligned to right */
+
+.card {
+  position: relative;
+  width: 500px;
+  /* Large size */
+  height: 700px;
+  background: #E1F5FE;
+  /* Light Blue Card */
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
 .card .imgBx,
 .card .details {
   width: 100%;
@@ -53,29 +83,50 @@ body {
 .card .imgBx {
   top: 0;
   left: 0;
+  z-index: 2;
+  /* Ensure image is on top initially */
+  background: #fff;
 }
 
 .card:hover .imgBx {
-  top: 0;
   left: -100%;
+  /* Move image to the left on hover */
 }
 
 .card .imgBx img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensure image covers the area without distortion */
 }
 
+.card .details {
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: navajowhite;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .card .details h2 {
-  font-size: 50px;
+  font-size: 40px;
   color: black;
-  text-align: center;
   margin: 0;
-  padding: 0 0 10pt;
-  border-bottom: 20px solid #fff,
-
+  padding: 0 0 10px;
 }
 
 .card .details p {
-    margin: 20px 0 0;
-    color: #fff;
+  margin: 20px 0 0;
+  color: #000;
+  font-family: 'Shadows Into Light', cursive;
+  /* New font */
+  font-size: 24px;
+  /* Increased size for readability */
+  line-height: 1.4;
+  /* Better spacing */
 }
